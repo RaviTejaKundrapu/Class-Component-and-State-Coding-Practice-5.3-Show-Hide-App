@@ -1,0 +1,80 @@
+/* Write your CSS here */
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 33px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.each-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.button {
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  color: #dd1264;
+  padding: 6px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nameDescription {
+  background-color: #fddddb;
+  height: 66px;
+  width: 100px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  color: #000000;
+  padding: 6px;
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (min-width: 767px) {
+  .heading {
+    font-size: 60px;
+  }
+  .items-container {
+    flex-direction: row;
+  }
+  .each-item-container {
+    margin-right: 10px;
+  }
+  .button {
+    font-size: 29px;
+  }
+
+  .nameDescription {
+    height: 100px;
+    width: 180px;
+    font-size: 19px;
+  }
+}
